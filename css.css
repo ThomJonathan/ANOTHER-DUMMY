@@ -43,7 +43,7 @@ table, th,td{
 }
 .content {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 2fr 4fr;
 }
 .lefdiv {
   background-color: rgb(96, 96, 218);
@@ -54,6 +54,13 @@ table, th,td{
   box-shadow: 3px 3px 3px rgb(58, 55, 55);
   border-radius: 2px;
   display: none;
+}
+.rightdiv
+{
+  position:absolute;
+  display: block;
+  width: 100%;
+ margin-left:300px;
 }
 .lefdiv a {
   display: inline-block;
