@@ -1,6 +1,96 @@
-main{
-    border: 2px black solid;
-    padding: 10px;
-    height: 90vh;
-    width: 96vw;
+.homebtn
+{
+    width: 6rem;
+    padding:10px;
+    color: #ffff;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(172, 172, 194);
+}
+table, th,td{
+    margin: 0.2rem solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+    background-color: aqua;
+}
+#p1{
+    color: blue;
+    font-size: 20px;
+    border: 0.5px solid;
+}
+/* from my old css */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.hedi {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  background-color: rgb(116, 116, 228);
+  text-align: center;
+  width: 100vw;
+  box-shadow: 3px 3px 3px rgb(58, 55, 55);
+  height: 15vh;
+  margin: auto;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.lefdiv {
+  background-color: rgb(96, 96, 218);
+  height: 84vh;
+  margin-top: 0.3rem;
+  margin-left: 0.1rem;
+  color: #ffff;
+  box-shadow: 3px 3px 3px rgb(58, 55, 55);
+  border-radius: 2px;
+  display: none;
+}
+.lefdiv a {
+  display: inline-block;
+  color: white;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: larger;
+}
+.btnclose {
+  float: inline-end;
+  border: none;
+  font-size: larger;
+  margin: 1rem;
+  background-color: transparent;
+  margin-top: 0.5rem;
+  color: #ffff;
+  cursor: pointer;
+}
+.toogled {
+  display: block;
+}
+.insidehedi {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .lefdiv {
+    min-width: 200px;
+    
+  }
+}
+@media (min-width: 1000px) {
+  .insidehedi {
+    visibility: hidden;
+  }
+  .lefdiv
+  {
+    display: block;
+  }
 }
